@@ -1,5 +1,7 @@
 ## Tic-Tac-Toe
 
+Status of last [Travis CI build](https://travis-ci.com/ChatchapongC/tictactoe):
+[![Build Status](https://travis-ci.com/ChatchapongC/tictactoe.svg?branch=master)](https://travis-ci.com/ChatchapongC/tictactoe) 
 ### Description
 
 A tic-tac-toe game written using JavaFX.
