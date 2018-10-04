@@ -59,8 +59,8 @@
 	<!-- compile the source code -->
 	<target name="compile" depends="init" description="Compile source code" >
 		<javac srcdir="src" destdir="bin" includeantruntime="false" />
-		<copy todir="destination dir">
-			<fileset dir="source dir">
+		<copy todir="${build.dir}">
+			<fileset dir="${src.dir}">
 				<include name="**/*.fxml" />
 			</fileset>
 		</copy>
@@ -90,7 +90,7 @@
 
 	<target name="jar" depends="compile"
 			description="Create runnable JAR file of project">
-		<jar destfile="TODO/TicTacToe.jar"
+		<jar destfile="dist/TicTacToe.jar"
 			 basedir="base dir containing all the stuff to put in jar file">
 			<manifest>
 				<attribute name = "Main-Class" value = "tictactoe.Main"/>
